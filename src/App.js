@@ -9,51 +9,23 @@ return (
 function App() {
 return (
 <div className="App">
-	<header className="App-header">
-		<div className="Top-Container">
-			{/*Contains Logo*/}
-			<div className="Logo-Container">
-				<h1 className="Page-Title">
-					<img className="Logo" src="urmom.png" />
-					Kilk's Wacky Page
-				</h1>
-			</div>
-			{/*Contains Dropa Down*/}
-			<div className="Dropdown-Container">
-				<button className="Drop-Btn">
-					PlaceHolder
-				</button>
-				<div className="Dropdown-Content">
-					<a href="#">Link 1</a>
-					<a href="#">Link 2</a>
-					<a href="#">Link 3</a>
-				</div>
-			</div>
+	{/*Top of page is a row */}
+	<div className="NavigatorContainter">
+		<div className="Logo"><img src="urmom.png"></img></div>
+		<div className="MainName"><h1>KILKS VRC COMMISIONS</h1></div>
+		<div className="DropDownContainter"><p>IpsumLorem</p></div>
+	</div>
+	{/*Page Contents ins a column*/}
+	<div className="MainContent">
+		<div className="CommStatus"><h1>Commisions are <CommisionStat></CommisionStat></h1></div>
+		<button className="CommButton">Click Here to Commision me!</button>
+		<div className="Proposition"><p>IpsumLorem...</p></div>
+		<div className="Gallery"></div>
+		<div className="CommInfo">
+			<button className="CommButton">Commision Me!</button>
+			<button className="ContactButton">Contact Me!</button>
 		</div>
-		{/*Page Contents*/}
-		<div className="Page-Contents">
-			<h2>
-				VRC COMMISIONS ARE
-				<CommisionStat></CommisionStat>
-			</h2>
-			<h3>
-				Welcome to my homepage... <del>ipsum lorem bullshit</del>
-			</h3>
-			<hr />
-			<p>
-				lmao
-			</p>
-			<h4>
-				Other Platforms
-			</h4>
-			{/*Insert Social Media link bullshit */}
-			<ul>
-				<li>Twitter</li>
-				<li>Discord</li>
-				<li>Your Mom</li>
-			</ul>
-		</div>
-	</header>
+	</div>
 </div>
 );
 }
